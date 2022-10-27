@@ -1,0 +1,14 @@
+.parent-div{
+  background-color: #0F2027;
+  color: white;
+  position: sticky;
+}
+ul li{
+  list-style: none;
+}
+ul li span {
+  cursor: pointer;
+}
+ul li span:hover{
+  color: yellow !important;
+}

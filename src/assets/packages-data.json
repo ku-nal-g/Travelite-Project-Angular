@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "city_name": "Agra",
+    "price": 120,
+    "ratings": 4,
+    "city-info": "lorem ipsum",
+    "image_url": "assets/img/package1.jpg"
+  },
+  {
+    "id": 2,
+    "city_name": "Jaipur",
+    "price": 100,
+    "ratings": 4.1,
+    "city-info": "lorem ipsum",
+    "image_url": "assets/img/package2.jpg"
+  },
+  {
+    "id": 3,
+    "city_name": "New Delhi",
+    "price": 80,
+    "ratings": 4.5,
+    "city-info": "lorem ipsum",
+    "image_url": "assets/img/package3.jpg"
+  },
+  {
+    "id": 4,
+    "city_name": "Kolkata",
+    "price": 140,
+    "ratings": 3.8,
+    "city-info": "lorem ipsum",
+    "image_url": "assets/img/package4.jpg"
+  },
+  {
+    "id": 5,
+    "city_name": "Ajmer",
+    "price": 100,
+    "ratings": 4.5,
+    "city-info": "lorem ipsum",
+    "image_url": "assets/img/package5.jpg"
+  },
+  {
+    "id": 6,
+    "city_name": "Pune",
+    "price": 60,
+    "ratings": 3.6,
+    "city-info": "lorem ipsum",
+    "image_url": "assets/img/package6.jpg"
+  },
+  {
+    "id": 7,
+    "city_name": "Manipal",
+    "price": 130,
+    "ratings": 4.2,
+    "city-info": "lorem ipsum",
+    "image_url": "assets/img/package7.jpg"
+  },
+  {
+    "id": 8,
+    "city_name": "Mumbai",
+    "price": 150,
+    "ratings": 4.5,
+    "city-info": "lorem ipsum",
+    "image_url": "assets/img/package8.jpg"
+  },
+  {
+    "id": 9,
+    "city_name": "lucknow",
+    "price": 80,
+    "ratings": 4.7,
+    "city-info": "lorem ipsum",
+    "image_url": "assets/img/package9.jpg"
+  },
+  {
+    "id": 10,
+    "city_name": "Patna",
+    "price": 40,
+    "ratings": 4,
+    "city-info": "lorem ipsum",
+    "image_url": "assets/img/package10.jpg"
+  },
+  {
+    "id": 11,
+    "city_name": "Kerala",
+    "price": 120,
+    "ratings": 4,
+    "city-info": "lorem ipsum",
+    "image_url": "assets/img/package11.jpg"
+  },
+  {
+    "id": 12,
+    "city_name": "Bangalore",
+    "price": 140,
+    "ratings": 5,
+    "city-info": "lorem ipsum",
+    "image_url": "assets/img/package12.jpg"
+  },
+  {
+    "id": 13,
+    "city_name": "Hyderabad",
+    "price": 135,
+    "ratings": 4.3,
+    "city-info": "lorem ipsum",
+    "image_url": "assets/img/package13.jpg"
+  },
+  {
+    "id": 14,
+    "city_name": "Noida",
+    "price": 80,
+    "ratings": 4.1,
+    "city-info": "lorem ipsum",
+    "image_url": "assets/img/package14.jpg"
+  },
+  {
+    "id": 15,
+    "city_name": "Chennai",
+    "price": 50,
+    "ratings": 4.4,
+    "city-info": "lorem ipsum",
+    "image_url": "assets/img/package15.jpg"
+  }
+]

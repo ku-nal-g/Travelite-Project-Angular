@@ -1,0 +1,236 @@
+<!--Header-->
+<div id="main-div">
+  <section [ngClass]="getHeaderClass()" class="p-2">
+    <div class="logo-div text-end mt-2 pt-1">
+      <p><span style="color: yellow">T</span>RAVELITE</p>
+    </div>
+    <div class="navigations-div text-center p-1 mt-2">
+      <ul>
+        <li><a class="p-2" href="#">Home</a>
+        <li><a class="p-2" href="#book-now">Book</a>
+        <li><a class="p-2" href="#packages">Packages</a>
+        <li><a class="p-2" href="#services">Services</a>
+        <li><a class="p-2" href="#gallery">Gallery</a>
+        <li><a class="p-2" href="#review">Review</a>
+        <li><a class="p-2" href="#contact">Contact</a>
+      </ul>
+    </div>
+    <div class="icons-div p-1 mt-2">
+      <span title="Login" class="profile-icon pe-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+        </svg>
+      </span>
+      <span title="search-bar" *ngIf="searchBtn" (click)="toggleSearchBtn()" class="search-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search"
+          viewBox="0 0 16 16">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+        </svg>
+      </span>
+      <span title="close search bar" *ngIf="!searchBtn" (click)="toggleSearchBtn()" class="search-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-lg"
+          viewBox="0 0 16 16">
+          <path
+            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+        </svg>
+      </span>
+    </div>
+  </section>
+
+  <!-- Search bar div-->
+  <div [ngClass]="getClass()">
+    <input class="p-2 search-input" type="text" placeholder="Type To Search">
+  </div>
+
+  <!--Images Carousel Banner-->
+
+  <div class="images-div">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="image5-div">
+            <div class="text-div line-ht">
+              <h1>ADVENTURE IS WORTHWHILE</h1>
+              <p>Discover new places with us, Adventure awaits</p>
+              <button class="btn discover">Discover More</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image2-div">
+            <div class="text-div line-ht">
+              <h1>ADVENTURE IS WORTHWHILE</h1>
+              <p>Discover new places with us, Adventure awaits</p>
+              <button class="btn discover">Discover More</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image3-div">
+            <div class="text-div line-ht">
+              <h1>ADVENTURE IS WORTHWHILE</h1>
+              <p>Discover new places with us, Adventure awaits</p>
+              <button class="btn discover">Discover More</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image4-div">
+            <div class="text-div line-ht">
+              <h1>ADVENTURE IS WORTHWHILE</h1>
+              <p>Discover new places with us, Adventure awaits</p>
+              <button class="btn discover">Discover More</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image1-div">
+            <div class="text-div line-ht">
+              <h1>ADVENTURE IS WORTHWHILE</h1>
+              <p>Discover new places with us, Adventure awaits</p>
+              <button class="btn discover">Discover More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+  <!--Login Modal code-->
+  <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 style="margin-left: 42%;" class="modal-title fs-5" id="staticBackdropLabel">LOGIN</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <input type="email" placeholder="Enter Email Address">
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-12">
+                <input class="pd-input" [type]="getPdType()" placeholder="Enter Password">
+                <button (click)="toggleEyeBtn()" *ngIf="showEyeBtn" class="eye-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-eye-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                    <path
+                      d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                  </svg>
+                </button>
+                <button (click)="toggleEyeBtn()" *ngIf="!showEyeBtn" class="eye-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z" />
+                    <path
+                      d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z" />
+                  </svg>
+                </button>
+
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-12">
+                <button class="login">LOGIN NOW</button>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-12">
+                <input class="me-2" type="checkbox">
+                <label>Remeber me</label>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-12">
+                <p>Forget Password ?<a class="modal-link">Click here</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p>Don't have an Account <a class="modal-link">Register Now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Book now component-->
+  <section id="book-now">
+    <app-book-now></app-book-now>
+  </section>
+
+  <!--Packages Component-->
+  <section id="packages">
+    <app-packages></app-packages>
+  </section>
+
+  <!--Services Component-->
+  <div id="services">
+    <app-services></app-services>
+  </div>
+
+  <!--Gallery Component-->
+  <div id="gallery">
+    <app-gallery></app-gallery>
+  </div>
+
+  <!--Review component-->
+  <div id="review">
+    <app-review></app-review>
+  </div>
+
+  <!--Contact component-->
+  <div id="contact">
+    <app-contact></app-contact>
+  </div>
+
+  <!--Footer component-->
+  <div class="footer">
+    <app-footer></app-footer>
+  </div>
+</div>
+
+<!-- Move to top button-->
+<button (click)="topFunction()" title="Go To Top" [ngClass]="getBtnClass()" title="Go to top">
+  <a>
+    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
+      class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+      <path
+        d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+    </svg>
+  </a>
+</button>
