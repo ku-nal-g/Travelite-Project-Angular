@@ -10,6 +10,7 @@ export class AppComponent {
   searchBtn: Boolean = true;
   showEyeBtn: boolean = true;
   showTopButton: boolean = false;
+  showMsgButton: boolean = true;
 
   constructor() { }
 
@@ -63,5 +64,11 @@ export class AppComponent {
     else {
       return "text";
     }
+  }
+  showCancelBtn() {
+    this.showMsgButton = !this.showMsgButton
+  }
+  getChatAssistantClass() {
+    return !this.showMsgButton ? 'show-conversation' : 'hide-conversation';
   }
 }
