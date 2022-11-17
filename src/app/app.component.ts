@@ -11,6 +11,7 @@ export class AppComponent {
   showEyeBtn: boolean = true;
   showTopButton: boolean = false;
   showMsgButton: boolean = true;
+  usersQuery:any = [];
 
   constructor() { }
 
@@ -70,5 +71,9 @@ export class AppComponent {
   }
   getChatAssistantClass() {
     return !this.showMsgButton ? 'show-conversation' : 'hide-conversation';
+  }
+  sendMessage(item:any){
+    console.log(item);
+    this.usersQuery.push(item);
   }
 }

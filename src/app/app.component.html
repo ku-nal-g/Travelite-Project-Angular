@@ -259,28 +259,33 @@
   <div class="top-bar pt-2 pe-3 pb-2 ps-3">
     <p class="mt-2">
       <span style="color: green;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot"
+          viewBox="0 0 16 16">
+          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
         </svg>
       </span>
-      Kunal Gupta</p>
+      Kunal Gupta
+    </p>
   </div>
   <div class="message-area p-4">
-    <div class="msg1 p-1 mb-2">
+    <div class="msg p-1 mb-2">
       <p class="ms-3 mt-2">Hi, do you need any help?</p>
     </div>
-    <div class="msg2 p-1">
+    <div class="msg p-1 mb-2">
       <p class="ms-3 mt-2">Can I start by taking your name, please?</p>
+    </div>
+    <div class="msg p-1 mb-2" *ngFor="let item of usersQuery; let i = index">
+      <p class="ms-3 mt-2">{{item}}</p>
     </div>
   </div>
   <div class="input-box">
     <div class="input">
-      <input type="text" placeholder="Write a Message">
+      <input type="text" #userInput placeholder="Write a Message">
     </div>
     <div class="send-btn pt-2">
       <div class="row">
-        <div class="col-md-6">
-          <a class="me-3 ms-3" title="upload a file">
+        <div class="col-md-6 text-center">
+          <a class="ms-3" title="upload a file">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-upload"
               viewBox="0 0 16 16">
               <path
@@ -290,8 +295,8 @@
             </svg>
           </a>
         </div>
-        <div class="col-md-6">
-          <a title="send a message">
+        <div class="col-md-6 text-center">
+          <a title="send a message" (click)="sendMessage(userInput.value)" (click)="userInput.value =''">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send-fill"
               viewBox="0 0 16 16">
               <path
